@@ -206,13 +206,20 @@ nav a:hover {
 
 /*Shop*/
 .shop {
-  display: flex;
+  display: inline-flex;
   width: 100vw;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shop h2 {
+  text-align: start;
+  margin-top: 5rem;
+  font-size: 10rem;
 }
 
 .products.container {
-  padding: minmax(5px, 5rem);
+  padding: 3rem 0;
   display: grid;
   grid-template: minmax(30rem, 35rem) / repeat(4, minmax(23.25rem, 24rem));
   grid-auto-rows: minmax(30rem, 35rem);
@@ -321,19 +328,53 @@ img[alt="shoe8"] {
   }
 }
 
+
+/*Transition*/
+
+.gradient {
+  width: 100vw;
+  height: 10rem;
+  background: linear-gradient(180deg, #FFFFFF, #EFF0F2);
+}
+
 /*About Us*/
+
+.last-section {
+  background: no-repeat center/cover url('../resources/images/aboutus.jpg');
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.about.container {
+  padding: 5rem 0;
+  display: grid;
+  grid-template: minmax(41.3333rem, 42.6666rem) / repeat(2, minmax(23.25rem, 24rem));
+  grid-auto-rows: minmax(41.3333rem, 42.6666rem);
+  gap: 5rem;
+}
+
+.about h2.subtitle {
+  font-size: 10rem;
+}
+
 .em {
-  border: 1px solid lightgray;
   border-radius: 1rem;
-  padding: 1rem;
-  width: 30rem;
+  padding: 2rem;
   aspect-ratio: 9/16;
   flex-direction: column;
   align-content: center;
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-content: flex-end;
+  justify-content: flex-end;
+}
+
+.em:hover {
+  padding: 10rem 2rem;
+  border: 1rem solid white;
+  transition: 1s;
 }
 
 .em h2 {
@@ -362,4 +403,42 @@ img[alt="shoe8"] {
 
 .employee4 {
   background: no-repeat center/cover url("../resources/images/portrait4.jpg");
+}
+
+.employee5 {
+  background: no-repeat center/cover url("../resources/images/portrait5.jpg");
+}
+
+@media only screen and (max-width: 900px) {
+  .about.container {
+    grid-template: 25rem / minmax(23.25rem, 24rem);
+    grid-auto-rows: minmax(41.3333rem, 42.6666rem);
+  }
+}
+
+/*Dev Description*/
+.dev-description {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 5rem;
+}
+
+.dev-description h5, .dev-description h4, .dev-description p {
+  color: white;
+  text-align: center;
+}
+
+.git {
+  display: flex;
+  align-items: center;
+}
+
+.git img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.disclaimer {
+  margin-top: 1rem;
 }
