@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 html {
@@ -318,4 +319,47 @@ img[alt="shoe8"] {
     grid-template: minmax(30rem, 35rem) / repeat(3, minmax(23.25rem, 24rem));
     grid-auto-rows: minmax(30rem, 35rem);
   }
+}
+
+/*About Us*/
+.em {
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 30rem;
+  aspect-ratio: 9/16;
+  flex-direction: column;
+  align-content: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.em h2 {
+  color: white;
+}
+
+.em h3 {
+  color: white;
+}
+
+.em p {
+  color: white;
+}
+
+.employee1 {
+  background: no-repeat center/cover url("../resources/images/portrait1.jpg");
+}
+
+.employee2 {
+  background: no-repeat center/cover url("../resources/images/portrait2.jpg");
+}
+
+.employee3 {
+  background: no-repeat center/cover url("../resources/images/portrait3.jpg");
+}
+
+.employee4 {
+  background: no-repeat center/cover url("../resources/images/portrait4.jpg");
 }
