@@ -212,7 +212,7 @@ nav a:hover {
 }
 
 .products.container {
-  padding: 5rem;
+  padding: minmax(5px, 5rem);
   display: grid;
   grid-template: minmax(30rem, 35rem) / repeat(4, minmax(23.25rem, 24rem));
   grid-auto-rows: minmax(30rem, 35rem);
